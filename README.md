@@ -88,13 +88,14 @@ select
 from age_class
 group by age_group
 
+'''
 ~~OUTPUT
 
-age_group	Spending_Power	Total_Profit
-Senior	         450745  	210447.4
-Middle Age	308325	        137062.3
-Young	        149160	       73859.25
-```
+Age_group	Spending_Power	Total_Profit
+Senior	         ₹450,745.00 	 ₹210,447.40 
+Middle Age	 ₹308,325.00 	 ₹137,062.30 
+Young	         ₹149,160.00 	 ₹73,859.25 
+
 
 2. **Write a SQL query to retrieve all  Gender wise profit and expense**:
 ```sql
