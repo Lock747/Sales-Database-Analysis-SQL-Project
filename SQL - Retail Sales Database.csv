@@ -1,4 +1,4 @@
-﻿transactions_id,sale_date,sale_time,customer_id,gender,age,category,quantiy,price_per_unit,cogs,total_sale
+﻿transactions_id,sale_date,sale_time,customer_id,gender,age,category,quantity,price_per_unit,cogs,total_sale
 180,2022-11-05,10:47:00,117,Male,41,Clothing,3,300,129,900
 522,2022-07-09,11:00:00,52,Male,46,Beauty,3,500,145,1500
 559,2022-12-12,10:48:00,5,Female,40,Clothing,4,300,84,1200
