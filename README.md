@@ -6,9 +6,9 @@ The project involves setting up a retail sales database, performing exploratory 
 
 **Features**
 
-	**Schema:** Includes normalized tables for Customers, Products, Orders, Sales.
-	**Data:** Sample sales data representing transactions, customer and product details.
-	**Queries:** Predefined SQL queries to explore, clean, analyze retail sales data trends, and customer behavior.
+	Schema: Includes normalized tables for Customers, Products, Orders, Sales.
+	Data: Sample sales data representing transactions, customer and product details.
+	Queries: Predefined SQL queries to explore, clean, analyze retail sales data trends, and customer behavior.
  
 **Use Cases:**
 
