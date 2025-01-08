@@ -1,0 +1,17 @@
+1. Write a SQL query to understand Age group and respective purchasing power and profit.
+
+2. Write a SQL query to understand all  Gender wise purchasing power.
+
+3. Write a SQL query to calculate the total sales (total_sale) for each category.
+
+4. Write a SQL query to find the peak season in 2 years and the most profitable season.
+ 
+5. Write a SQL query to find the best Category in for an year.
+
+6. Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.
+
+7. Write a SQL query to calculate the average sale for each month. Find out best selling month in each year
+
+8. Write a SQL query to find the top 5 customers based on the highest total sales
+
+9. Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)
