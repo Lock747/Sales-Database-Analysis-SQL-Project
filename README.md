@@ -92,7 +92,7 @@ group by age_group
 
 **OUTPUT**
 
-**Age_group**	**Spending_Power**	**Total_Profit**
+Age_group	Spending_Power	Total_Profit
 Senior	         ₹450,745.00 	 ₹210,447.40 
 Middle Age	 ₹308,325.00 	 ₹137,062.30 
 Young	         ₹149,160.00 	 ₹73,859.25 
