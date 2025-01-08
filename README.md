@@ -93,6 +93,7 @@ group by age_group
 OUTPUT
 
 Age_group	Spending_Power	Total_Profit
+---------	--------------	-------------
 Senior	         ₹450,745.00 	 ₹210,447.40 
 Middle Age	 ₹308,325.00 	 ₹137,062.30 
 Young	         ₹149,160.00 	 ₹73,859.25
@@ -105,7 +106,7 @@ select
 gender,
 sum(total_sale)[Spending_Power],
 sum((Total_sale-quantity*cogs))[Total_Profit]
-from temp_rsa
+from sales_pr
 group by gender;
 
 OUTPUT
@@ -121,7 +122,7 @@ SELECT
     category,
     SUM(total_sale) as net_sale,
     COUNT(*) as total_orders
-FROM temp_rsa
+FROM sales_pr
 group by category
 
 OUTPUT
@@ -142,7 +143,7 @@ with sale_season as (
 		when month(sale_date) between 3 and 6 then 'Summer'
 		else 'Winter'
 	end as Season	
-	from temp_rsa
+	from sales_pr
 	)
 
 select 
@@ -175,7 +176,7 @@ with sale_season as (
 		when month(sale_date) between 3 and 6 then 'Summer'
 		else 'Winter'
 	end as Season	
-	from temp_rsa
+	from sales_pr
 	)
 
 select 	
@@ -203,7 +204,7 @@ select
 	category,
 	Sum(total_sale) [Total_Sale],
 	rank()over (partition by year(sale_date) order by Sum(total_sale) desc) as top_category
-from temp_rsa
+from sales_pr
 group by year(sale_date), category
 ) as l
 where top_category = '1'
@@ -222,7 +223,7 @@ select
 	gender,
 	category,
 	count(transactions_id) as number_of_orders
-from temp_rsa
+from sales_pr
 group by gender, category
 order by 1
 
@@ -255,7 +256,7 @@ SELECT
 		PARTITION BY YEAR(sale_date) 
 		ORDER BY AVG(total_sale) DESC) 
 	as rank
-from temp_rsa
+from sales_pr
 group by YEAR(sale_date),
     MONTH(sale_date)
 ) as t1
@@ -277,8 +278,8 @@ select top 5 * from
 dense_rank()over(
 	partition by customer_id
 	order by total_sale desc) as rank
-from temp_rsa) as ts1
-where rank = 1 and total_sale like ( select max(total_sale) from temp_rsa)
+from sales_pr) as ts1
+where rank = 1 and total_sale like ( select max(total_sale) from sales_pr)
 order by cogs
 
 OUTPUT
@@ -303,7 +304,7 @@ with hourly_sale as (
 		when cast(sale_time as time) >= '12:00:00' and cast(sale_time as time) < '17:00:00' then 'Afternoon'
 		else 'Evening'
 	end as shift 
-	from temp_rsa
+	from sales_pr
 	)
 
 select shift, count(*)[Orders] from hourly_sale 
