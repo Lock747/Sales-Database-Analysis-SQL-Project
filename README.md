@@ -88,7 +88,7 @@ select
 from age_class
 group by age_group
 
-**OUTPUT**
+~~OUTPUT
 
 age_group	Spending_Power	Total_Profit
 Senior	         450745  	210447.4
@@ -96,7 +96,7 @@ Middle Age	308325	        137062.3
 Young	        149160	       73859.25
 ```
 
-2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
+2. **Write a SQL query to retrieve all  Gender wise profit and expense**:
 ```sql
 SELECT 
   *
