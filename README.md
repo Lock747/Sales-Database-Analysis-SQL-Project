@@ -5,9 +5,9 @@ This repository contains a comprehensive SQL-based sales database designed for a
 The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.
 
 **Features**
-	•**	Schema:** Includes normalized tables for Customers, Products, Orders, Sales.
-	•	**Data:** Sample sales data representing transactions, customer and product details.
-	•	**Queries:** Predefined SQL queries for analyzing sales performance, explore, clean, analyze retail sales data trends, and customer behavior.
+	**Schema:** Includes normalized tables for Customers, Products, Orders, Sales.
+	**Data:** Sample sales data representing transactions, customer and product details.
+	**Queries:** Predefined SQL queries for analyzing sales performance, explore, clean, analyze retail sales data trends, and customer behavior.
  
 **Use Cases:**
 	•	Sales forecasting and trend analysis.
